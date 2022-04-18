@@ -39,7 +39,7 @@ function Footer ({size}) {
             {process.env.NEXT_PUBLIC_COPYRIGHT_TEXT}
           </LabelSmall>
           <div style={{marginTop: 10}}>
-            { process.env.NEXT_PUBLIC_TWITTER && process.env.NEXT_PUBLIC_TWITTER != "" &&
+            { process.env.NEXT_PUBLIC_TWITTER && process.env.NEXT_PUBLIC_TWITTER != "https://twitter.com/of1nft" &&
             <a href={`${process.env.NEXT_PUBLIC_TWITTER}`} target='_blank'>
               <FaTwitter
                 style={{width: 30, height: 30}}
@@ -47,7 +47,7 @@ function Footer ({size}) {
               />
             </a>
             }
-            { process.env.NEXT_PUBLIC_INSTAGRAM && process.env.NEXT_PUBLIC_INSTAGRAM != "" &&
+            { process.env.NEXT_PUBLIC_INSTAGRAM && process.env.NEXT_PUBLIC_INSTAGRAM != "https://instagram.com/of1nft" &&
             <a href={`${process.env.NEXT_PUBLIC_INSTAGRAM}`} target='_blank'>
               <FaInstagram
                 href={process.env.NEXT_PUBLIC_INSTAGRAM}
@@ -55,7 +55,7 @@ function Footer ({size}) {
                 color={theme.colors.contentPrimary}
               />
             </a>}
-            { process.env.NEXT_PUBLIC_GITHUB && process.env.NEXT_PUBLIC_GITHUB != "" &&
+            { process.env.NEXT_PUBLIC_GITHUB && process.env.NEXT_PUBLIC_GITHUB != "https://github.com/jesse-21" &&
               <a href={`${process.env.NEXT_PUBLIC_GITHUB}`} target='_blank'>
               <FaGithub
                 style={{width: 30, height: 30, marginLeft: 10}}
